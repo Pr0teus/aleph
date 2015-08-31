@@ -9,7 +9,7 @@ import yara
 class YaraPlugin(PluginBase):
     """Use Yara to match patterns into the sample"""
     name = 'yara'
-    default_options = { 'enabled': True}  
+    default_options = { 'enabled': False}  
     required_options = [ 'rules_path']
 
     rules = None
